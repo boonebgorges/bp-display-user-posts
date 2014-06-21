@@ -85,7 +85,7 @@ class BP_Display_User_Posts_Component extends BP_Component {
 					'<li><a href="%s">%s</a> - %s',
 					esc_url( get_the_permalink( get_the_ID() ) ),
 					esc_html( get_the_title() ),
-					esc_html( get_the_time() )
+					esc_html( get_the_date() )
 				);
 			}
 
