@@ -19,8 +19,7 @@ class BP_Display_User_Posts_Component extends BP_Component {
 	 */
 	public function setup_globals( $args = array() ) {
 		parent::setup_globals( array(
-			'slug'          => 'my-posts', // used for building URLs
-			'has_directory' => false,
+			'slug' => 'my-posts', // used for building URLs
 		) );
 	}
 
