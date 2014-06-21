@@ -28,20 +28,20 @@ class BP_Display_User_Posts_Component extends BP_Component {
 	 */
 	public function setup_nav( $main_nav = array(), $sub_nav = array() ) {
 		$main_nav = array(
-			'name'            => __( 'My Posts', 'bp-display-user-posts' ),
-			'slug'            => $this->slug,
-			'position'        => 35,
+			'name'                => __( 'My Posts', 'bp-display-user-posts' ),
+			'slug'                => $this->slug,
+			'position'            => 35,
 			'default_subnav_slug' => 'my-posts',
-			'screen_function' => array( $this, 'screen_function' ),
+			'screen_function'     => array( $this, 'screen_function' ),
 		);
 
 		// BuddyPress needs to have at least one subnav item, even if
 		// it's redundant
 		$sub_nav[] = array(
-			'name' => __( 'My Posts', 'bp-display-user-posts' ),
-			'slug' => 'my-posts',
+			'name'        => __( 'My Posts', 'bp-display-user-posts' ),
+			'slug'        => 'my-posts',
 			'parent_slug' => 'my-posts',
-			'parent_url' => bp_displayed_user_domain() . 'my-posts/',
+			'parent_url'  => bp_displayed_user_domain() . 'my-posts/',
 		);
 
 		parent::setup_nav( $main_nav, $sub_nav );
